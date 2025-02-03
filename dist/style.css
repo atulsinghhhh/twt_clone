@@ -508,36 +508,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.75rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .ml-3 {
   margin-left: 0.75rem;
 }
 
-.ml-16 {
-  margin-left: 4rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .ml-auto {
   margin-left: auto;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .flex {
