@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="style.css">
+    <title>Twitter Clone</title>
+</head>
+<body>
+    <div class="flex bg-black text-white">
+        <!-- Sidebar Section -->
+        <div class="first text-white w-60 border-r-slate-400">
+            <!-- Logo Section -->
+            <div class="logo invert pl-20 mt-5">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 text-white">
+                    <g>
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                    </g>
+                </svg>
+            </div>
+            <!-- Sidebar Links Section -->
+            <div class="sidebar  text-white h-screen w-60 p-4">
+                <ul class="space-y-6">
+                    <li class="flex items-center space-x-4 hover:bg-gray-800 p-2 rounded-lg cursor-pointer">
+                        <span class="material-symbols-outlined">home</span>
+                        <span class="text-lg">Home</span>
+                    </li>
+                    <li class="flex items-center space-x-4 hover:bg-gray-800 p-2 rounded-lg cursor-pointer">
+                        <span class="material-symbols-outlined">search</span>
+                        <span class="text-lg">Search</span>
+                    </li>
+                    <li class="flex items-center space-x-4 hover:bg-gray-800 p-2 rounded-lg cursor-pointer">
+                        <span class="material-symbols-outlined">mail</span>
+                        <span class="text-lg">Messages</span>
+                    </li>
+                    <li class="flex items-center space-x-4 hover:bg-gray-800 p-2 rounded-lg cursor-pointer">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <span class="text-lg">Notifications</span>
+                    </li>
+                    <li class="flex items-center space-x-4 hover:bg-gray-800 p-2 rounded-lg cursor-pointer">
+                        <span class="material-symbols-outlined">group</span>
+                        <span class="text-lg">Communities</span>
+                    </li>
+                    <li class="flex items-center space-x-4 hover:bg-gray-800 p-2 rounded-lg cursor-pointer">
+                        <span class="material-symbols-outlined">person</span>
+                        <span class="text-lg">Profile</span>
+                    </li>
+                    <li class="flex items-center space-x-4 hover:bg-gray-800 p-2 rounded-lg cursor-pointer">
+                        <span class="material-symbols-outlined">more</span>
+                        <span class="text-lg">More</span>
+                    </li>
+                    <li class="flex items-center space-x-4 hover:bg-gray-800 p-2 rounded-lg cursor-pointer">
+                        <span class="material-symbols-outlined">post_add</span>
+                        <span class="text-lg">Post</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="second w-full bg-slate-600">
+            <div class="flex justify-evenly  border-b border-white cursor-pointer">
+                <p class="m-3 font-semibold">For You</p>
+                <p class="m-3 font-semibold">Following</p>
+            </div>
+            <div class="flex space-x-3 ">
+                <img src="/images/atul.jpg" alt="User" class="w-10 h-10 rounded-full m-2">
+                <input id="tweetInput" type="text" placeholder="What is happening?!" class="bg-transparent text-lg w-full outline-none placeholder-gray-400"/>
+            </div>
+            <!-- reply for tweet -->
+            <div class=" flex border-b border-white ml-12">
+                <p class=""><span class="material-symbols-outlined">public</span></p>
+                <p class="text-blue-500 font-medium mb-2">Everyone reply you</p>
+            </div>
+            <!-- additional button -->
+            <div class="flex justify-between items-center mt-4 ">
+                <div class="flex space-x-4 text-blue-500">
+
+                </div>
+            </div>
+            <!-- post button -->
+            <div class="flex justify-end p-2">
+                <button id="postButton" class="px-4 py-1.5 rounded-full font-semibold bg-gray-700 text-gray-400 hover:bg-slate-900 cursor-pointer"> Post </button>
+            </div>
+            <!-- show more -->
+            <div class="mt-4 mb-4">
+                <p class="border-t border-b border-white text-center font-normal text-blue-500 py-2">Show 350 posts</p>
+            </div>
+            <!-- post -->
+
+            <div class="">
+                <div class="flex">
+                    <img src="https://images.hindustantimes.com/img/2024/08/15/550x309/Prime-Minister-Narendra-Modi-speaks-on-the-Union-B_1721736232452_1723685348176.jpg" alt="User" class="w-10 h-10 rounded-full m-2">
+                    <div>
+                        <h1 class="ml-1 font-normal">Narendra Modi</h1>
+                        <p class="font-light">5 फरवरी अब दूर नहीं है। इसे लेकर दिल्ली भाजपा के कार्यकर्ताओं और सभी शुभचिंतकों से मेरी यह प्रार्थना…</p>
+                    </div>
+                </div>
+                <img class="rounded-xl ml-12 mt-3" src="https://images.hindustantimes.com/img/2024/08/15/550x309/Prime-Minister-Narendra-Modi-speaks-on-the-Union-B_1721736232452_1723685348176.jpg">
+                <!-- second post -->
+                <div class="flex">
+                    <img src="/images/atul.jpg" alt="User" class="w-10 h-10 rounded-full m-2">
+                    <div>
+                        <h1 class="ml-1 mt-3 font-normal">Atvi Rathore</h1>
+                        <p class="font-light"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- third box start -->
+        <div class="third w-1/2 bg-black text-white m-8  " >
+            <!-- Search bar -->
+             <div class="bg-grey-900 text-white rounded-xl shadow-lg border border-gray-700 w-80 mb-4 h-10">
+                 <input id="searchInput" type="text" placeholder="Search" class="bg-transparent w-full outline-none placeholder-gray-400 ml-6 mt-2 font-thin "/>
+             </div>
+
+            <!-- first box -->
+            <div class="bg-gray-900 text-white p-6 rounded-xl shadow-lg border border-gray-700 w-80">
+                <h1 class="font-semibold text-xl mb-2">Subscribe to Premium</h1>
+                <p class="text-sm mb-4">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg w-28">Subscribe</button>
+            </div>
+            <!-- second box -->
+            <div class="bg-gray-900 text-white p-6 rounded-xl border border-gray-700 w-80 mt-4">
+                <h1 class="font-extrabold text-xl">What’s happening</h1>
+                <div class="flex mt-4 ">
+                    <img class="w-24 h-20 rounded-xl"src="https://pbs.twimg.com/semantic_core_img/1875997496851263488/BLI4C75l?format=jpg&name=240x240">
+                    <div>
+                        <h1 class="ml-3">Khloé in Wonder Land</h1>
+                        <p class="ml-3 font-thin text-slate-600">LIVE</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-4">
+                        <!-- <p class="flex justify-end"><span class="material-symbols-outlined">more_horiz</span></p> -->
+                        <h1 class="font-semibold">#TradeWithCoinDCX</h1>
+                        <p class="font-thin text-slate-600">Trade Bitcoin, Ethereum futures, and more in INR on CoinDCX today.</p>
+                        <p class="font-thin text-slate-600">Promoted by CoinDCX : India Ka Crypto Coach</p>
+                    </div>
+                    <div class="mt-4">
+                        <!-- <p class="flex justify-end"><span class="material-symbols-outlined">more_horiz</span></p> -->
+                        <p class="font-thin text-slate-600">Politics · Trending</p>
+                        <h1 class="font-semibold">#AmitShahKiGundaGardi</h1>
+                        <p class="font-thin text-slate-600">20.5K posts</p>
+                    </div>
+                    <div class="mt-4">
+                        <!-- <p class="flex justify-end"><span class="material-symbols-outlined">more_horiz</span></p> -->
+                        <p class="font-thin text-slate-600">Sports · Trending</p>
+                        <h1 class="font-semibold">#IndianCricketTeam</h1>
+                    </div>
+                    <div class="mt-4">
+                        <!-- <p class="flex justify-end"><span class="material-symbols-outlined">more_horiz</span></p> -->
+                        <p class="font-thin text-slate-600">Entertainment · Trending</p>
+                        <h1 class="font-semibold">#DulquerSalmaan</h1>
+                        <p class="font-thin text-slate-600">2,499 posts</p>
+                    </div>
+                    <p class="text-blue-500 font-normal mt-5">Show more</p>
+                </div>
+            </div>
+            <!-- more follow-->
+            <div class="bg-gray-900 text-white p-6 rounded-xl border border-gray-700 w-80 mt-4">
+                <h1 class="font-semibold text-xl mb-4">Who to follow</h1>
+                <!-- first followers -->
+                <div class="flex">
+                    <img src="/images/atul.jpg" alt="User" class="w-10 h-10 rounded-full">
+                    <div class="">
+                        <h1 class="ml-2">Atvi Rathore</h1>
+                        <p class="font-thin text-slate-600 ml-2">@atvi</p>
+                    </div>
+                    <div class="ml-auto">
+                        <p class="text-sm text-blue-500 font-normal">Follow</p>
+                    </div>
+                </div>
+                <!-- second followers -->
+                <div class="flex mt-3">
+                    <img src="/images/atul.jpg" alt="User" class="w-10 h-10 rounded-full">
+                    <div class="">
+                        <h1 class="ml-2">Atvi Rathore</h1>
+                        <p class="font-thin text-slate-600 ml-2">@atvi</p>
+                    </div>
+                    <div class="ml-auto">
+                        <p class="text-sm text-blue-500 font-normal">Follow</p>
+                    </div>
+                </div>
+                <!-- third followers -->
+                <div class="flex mt-3">
+                    <img src="/images/atul.jpg" alt="User" class="w-10 h-10 rounded-full">
+                    <div class="">
+                        <h1 class="ml-2">Atvi Rathore</h1>
+                        <p class="font-thin text-slate-600 ml-2">@atvi</p>
+                    </div>
+                    <div class="ml-auto">
+                        <p class="text-sm text-blue-500 font-normal">Follow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
